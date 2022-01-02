@@ -1,15 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Conquackulations!
-        </p>
-      </header>
+    <div className="landing-container">
+      <div className="landing-title-block">
+        <h1 className="landing-title-text">
+          Michael Lee
+        </h1>
+        <h5 className="landing-subtitle-text">Computer Science @ Notre Dame</h5>
+      </div>
+      <div className='landing-title-accent'></div>
+      <div className="landing-block">
+      </div>
+      <div className="landing-image">
+      </div>
     </div>
   );
 }

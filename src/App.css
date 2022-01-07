@@ -1,12 +1,101 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-flow: column;
   width: 100vw;
-  height: 100vh;
-  background-image: ____;
+  height: 500vh;
+  background-color: #2a2a2b;
 }
 
-.landing-container{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+.NavBar{
+  height: 7vh;
+  width: 85vw;
 }
+
+.banner-container{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 3vh;
+}
+
+.hero-block{
+  align-self: left;
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  align-content: left;
+  justify-items: left;
+  margin-top: 7vh;
+  margin-left: 3vw;
+  order: 2;
+  width: 97vw;
+  height: 80vh;
+}
+
+/* The hero image */
+.hero-image {
+  display: flex;
+  order: 1;
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("/src/images/michael-business.jpg");
+  /* Set a specific height */
+  width: 30vw;
+  height: 80vh;
+  filter: grayscale(100%);
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.hero-blurb{
+  display: flex;
+  order: 1;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landscape.jpg");
+  width: 60vw;
+  height: 80vh;
+  filter: grayscale(100%);
+  margin-left: 5vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  /* font styling */
+  text-align: center;
+  font-size: 30px;
+  color: #FFFF;
+}
+
+.hero-title{
+  order: 3;
+  flex-grow: 2;
+  margin-left: 11vw;
+  font-size: 45px;
+  color: #FFFF;
+}
+
+.section-title{
+  padding-top: 5vh;
+  order: 1;
+  margin-left: 11vw;
+  font-size: 35px;
+  color: #FFFF;
+}
+
+.project-list{
+  margin-left: 11vw;
+  justify-content: center;
+  flex-direction: column;
+  order: 2;
+  width: 80vw;
+  padding-top: 3vh;
+}
+
+.project-item{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+

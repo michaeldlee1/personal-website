@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column;
   width: 100vw;
-  height: 500vh;
+  min-height: 100vh;
   background-color: #2a2a2b;
 }
 
@@ -48,20 +48,31 @@
   z-index: 1;
 }
 
+.blurb-pic{
+  position: absolute;
+  left: 38vw;
+  top: 17vh;
+  order: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landscape.jpg");
+  filter: grayscale(100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60vw;
+  height: 80vh;
+  z-index: 1;
+}
+
 .hero-blurb{
   display: flex;
   order: 1;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landscape.jpg");
+  align-content: center;
   width: 60vw;
   height: 80vh;
-  filter: grayscale(100%);
   margin-left: 5vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
+  z-index: 10;
   /* font styling */
   text-align: center;
   font-size: 30px;
@@ -96,6 +107,13 @@
 .project-item{
   display: flex;
   margin-bottom: 15px;
+}
+
+.icon-list{
+  display: flex;
+  gap: 10px;
+  align-self: center;
+  flex-direction: row;
 }
 
 

@@ -33,13 +33,6 @@ const PAGES = [
         link: '/projects',
         component: <Projects />
         /* icon: ____ */
-    },
-    {
-        id: 'cv',
-        name: 'CV',
-        link: '/cv',
-        component: <CV />
-        /* icon: ____ */
     }
 ];
 

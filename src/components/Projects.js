@@ -9,13 +9,6 @@ import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom'
 
 function Projects(){
-    /* 
-    chess 
-    trek10 site
-    golf predictor
-    twitter bot (?)
-    this website
-    */
     return(
     <div className='App'>
         <div className='section-title'>Projects</div>
@@ -37,7 +30,7 @@ function Projects(){
             <CardActions>
               <Button target="_blank" href="https://www.chess.mlee43.me" size="small">Demo</Button>
               <Button target="_blank" href="https://github.com/gjakubik/distChessEngine" size="small">Github Repo</Button>
-              <Button target="_blank" href="/components/ChessPaper.js" size="small">Paper</Button>
+              <Button target="_blank" href="../pdfs/Distributed_Chess_Paper.pdf" size="small">Paper</Button>
             </CardActions>
           </Card>
           </div>
@@ -76,7 +69,7 @@ function Projects(){
             </CardContent>
             <CardActions>
               <Button target="_blank" href="https://github.com/gjakubik/golfPredictor" size="small">GitHub Repo</Button>
-              <Button target="_blank" href="" size="small">Paper</Button>
+              <Button target="_blank" href='../pdfs/Data_Science_Final.pdf' size="small">Paper</Button>
             </CardActions>
           </Card>
           </div>

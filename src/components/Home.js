@@ -13,17 +13,17 @@ function Home(){
       <div className='hero-block'>
         <div className='hero-image'>
         </div>
-        <div className='blurb-pic'></div>
+        <div className='blurb-pic'>
         <div className='hero-blurb'>
-          <h2>Computer Science</h2> 
-          <h2>University of Notre Dame 2022</h2> 
+          <div>Computer Science</div>
+          <div>University of Notre Dame 2022</div> 
           <div className="icon-list">
             <Button target="_blank" href="mailto:mlee43@nd.edu"><EmailIcon sx={{ color: "white"}} /></Button>
             <Button target="_blank" href="https://github.com/michaeldlee1"><GitHubIcon sx={{color: "white"}}/></Button>
             <Button target="_blank" href="https://www.linkedin.com/in/michael-lee-ab06aa174/"><LinkedInIcon sx={{color: "white"}}/></Button>
             <Button target="_blank" href="../pdfs/ResumeSpring2022.pdf"><InsertDriveFileIcon sx={{color: "white"}}/></Button>
           </div>
-        </div>
+        </div></div>
       </div>
     </div>
   );

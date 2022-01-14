@@ -8,13 +8,20 @@ import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import { Link } from 'react-router-dom'
 
+
+/* helper function to calculate viewport width */
+function vw(v) {
+  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+  return (v * w) / 100;
+}
+
 function Projects(){
     return(
     <div className='App'>
         <div className='section-title'>Projects</div>
         <div className='project-list'>
           <div className='project-item'>
-          <Card sx={{ minWidth: 275, bgcolor: '#48484a' }}>
+          <Card sx={{ width: vw(78), bgcolor: '#48484a' }}>
             <CardContent>
               <Typography variant='h5' component='div' color="white" gutterBottom>
                 Distributed Chess Engine
@@ -28,14 +35,14 @@ function Projects(){
               </Typography>
             </CardContent>
             <CardActions>
-              <Button target="_blank" href="https://www.chess.mlee43.me" size="small">Demo</Button>
+              <Button target="_blank" href="https://chess.mlee43.me" size="small">Demo</Button>
               <Button target="_blank" href="https://github.com/gjakubik/distChessEngine" size="small">Github Repo</Button>
               <Button target="_blank" href="../pdfs/Distributed_Chess_Paper.pdf" size="small">Paper</Button>
             </CardActions>
           </Card>
           </div>
           <div className="project-item">
-          <Card sx={{minWidth: 275, bgcolor: '#48484a' }}>
+          <Card sx={{ width: vw(78), bgcolor: '#48484a' }}>
             <CardContent>
               <Typography variant='h5' component='div' color="white" gutterBottom>
                 Better AWS Availability Website
@@ -54,7 +61,7 @@ function Projects(){
           </Card>
           </div>
           <div className="project-item">
-          <Card sx={{minWidth: 275, bgcolor: '#48484a' }}>
+          <Card sx={{ width: vw(78), bgcolor: '#48484a' }}>
             <CardContent>
               <Typography variant='h5' component='div' color="white" gutterBottom>
                 Golf Predictor
@@ -74,7 +81,7 @@ function Projects(){
           </Card>
           </div>
           <div className="project-item">
-          <Card sx={{minWidth: 275, bgcolor: '#48484a' }}>
+          <Card sx={{ width: vw(78), bgcolor: '#48484a' }}>
             <CardContent>
               <Typography variant='h5' component='div' color="white" gutterBottom>
                 Portfolio (This Website!)

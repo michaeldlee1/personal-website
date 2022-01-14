@@ -51,7 +51,7 @@
 .blurb-pic{
   position: absolute;
   left: 38vw;
-  top: 17vh;
+  top: 14vh;
   order: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/landscape.jpg");
   filter: grayscale(100%);

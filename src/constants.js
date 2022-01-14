@@ -20,13 +20,13 @@ const PAGES = [
         component: <About />
         /* icon: ____*/
     },
-    {
+    /*({
         id: 'blog',
         name: 'Blog',
         link: '/blog',
         component: <Blog />
-        /* icon: ____ */
-    },
+         icon: ____ 
+    }*/
     {
         id: 'projects',
         name: 'Projects',
